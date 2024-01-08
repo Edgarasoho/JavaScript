@@ -13,13 +13,13 @@ if (a > b && a > c) {
 console.log("=======================================");
 let maziausias;
 if (a <= b && a <= c) {
-  maziausias = a;
+  console.log("maziausias yra:", a);
 } else if (b <= a && b <= c) {
-  maziausias = b;
-} else {
-  maziausias = c;
+  console.log("maziausias yra:", b);
+} else if (c <= a && c <= b) {
+  console.log("maziausias yra:", c);
 }
-console.log("maziausias skaicius yra :", maziausias);
+
 console.log("=======================================");
 let rez1 = 9;
 let rez2 = 6;
