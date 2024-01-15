@@ -68,5 +68,12 @@ while (sum < 100) {
 console.log("Skaiciu suma:", sum);
 
 console.log("-------uzduotis9------");
+let duona = 20;
+let bandeles = 32;
+let piragai = 18;
+
+while ((duona > 0, bandeles > 0, piragai > 0)) {
+  console.log("turimu produktu kiekis");
+}
 
 console.log("-------uzduotis10------");
