@@ -170,3 +170,53 @@ console.log(
   new Date(Date.now()).getFullYear() - car.metai,
   "metai"
 );
+console.log("----------------------------------------");
+
+const knygynas = {
+  pavadinimas: "Mazvydo knygynas",
+  adresas: "paparciu 11, Vilnius",
+  plotas: 300,
+  knyguKiekis: 30000,
+  darboValandos: "nuo 8:00 iki 19:00",
+};
+console.log(knygynas);
+for (const book in knygynas) {
+  if (typeof knygynas[book] === "number") {
+    console.log(knygynas[book]);
+  }
+}
+console.log("---------------------------------------------");
+
+let stud1 = {
+  vardas: "Jonas",
+  pavarde: "JonaitiS",
+  stPrograma: "programavimas",
+  pazimiai: [7, 6, 9, 10, 8],
+};
+let pazSum = 0;
+for (const pazim of stud1.pazimiai) pazSum += pazim;
+{
+  vid1 = pazSum / stud1.pazimiai.length;
+  console.log("pirmo studento pazimiai:", stud1.pazimiai);
+  console.log("pirmo studento pazimiu vidurkis:", vid1);
+}
+let pazSum2 = 0;
+const stud2 = {
+  vardas: "Pranas",
+  pavarde: "Pranaitis",
+  stPrograma: "programavimas",
+  pazimiai: [10, 6, 5, 9, 7],
+};
+for (const paz of stud2.pazimiai) pazSum2 += paz;
+{
+  vid2 = pazSum2 / stud2.pazimiai.length;
+  console.log("antro studento pazimiai:", stud2.pazimiai);
+  console.log("antro studento pazimiu vidurkis:", vid2);
+}
+if (vid1 > vid2) {
+  console.log("pirmo studento vidurkis dydesnis", vid1, stud1);
+}
+if (vid2 > vid1) {
+  console.log("antro studento vidurkis dydesnis", vid2, stud2);
+}
+console.log("---------------------------------------------------");
