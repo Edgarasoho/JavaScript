@@ -90,3 +90,20 @@ if (uzsak <= kepiniai) {
 }
 let pajamosIrPelnas = kepiniai * kepKaina - savikaina;
 console.log("pajamos ir pelnas", pajamosIrPelnas, "Eur");
+console.log("-----------------------------------------------------------");
+let pirmasSkaitmuo = 5;
+let antrasSkaitmuo = 4;
+let treciasSkaitmuo = 6;
+
+let skaiciuSuma = pirmasSkaitmuo + antrasSkaitmuo + treciasSkaitmuo;
+if (pirmasSkaitmuo === 1) {
+  console.log(skaiciuSuma);
+}
+let skaiciuSand = antrasSkaitmuo * treciasSkaitmuo;
+if (pirmasSkaitmuo === 2) {
+  console.log(skaiciuSand);
+}
+let pirmSkaicKvad = pirmasSkaitmuo * pirmasSkaitmuo;
+if (pirmasSkaitmuo === 3) {
+  console.log(pirmSkaicKvad);
+}
